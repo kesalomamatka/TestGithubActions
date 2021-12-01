@@ -1,0 +1,26 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "coveralls": "jest --coverage"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.3.1",
+    "coveralls": "^3.1.1",
+    "jest": "^27.3.1",
+    "jest-extended": "^1.1.0"
+  }
+}
