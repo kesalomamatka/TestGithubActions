@@ -39,4 +39,6 @@ jobs:
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
+        repo-token: ${{ github.token }}
+        repository: ${{ github.repository }}  
         github-token: ${{ github.token }}
