@@ -34,8 +34,10 @@ jobs:
       continue-on-error: true
     
     - name: Run coverage report
+      run: npm run coveralls
+      continue-on-error: true
+      
+    - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-      run: npm run coveralls
-      continue-on-error: true
